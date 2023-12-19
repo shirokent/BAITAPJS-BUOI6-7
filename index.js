@@ -41,12 +41,9 @@ document.getElementById("btn2").onclick = tinhTong2;
 
 // ===== BÀI TẬP 3 =====
 function timSoNhoNhat() {
-  //   --- Sắp xếp theo thứ tự tăng dần ---
   var arrSapXep = arrX.sort(function (a, b) {
     return a - b;
   });
-  //   console.log(arrSapXep);
-  //   --- tìm số nhỏ nhất ---
   var soNhoNhat = arrSapXep[0];
   document.getElementById(
     "kq3"
@@ -59,7 +56,6 @@ function timSoDuongNhoNhat() {
   var arrSapXep = soDuong.sort(function (a, b) {
     return a - b;
   });
-  //   console.log(arrSapXep);
   var soDuongNhoNhat = arrSapXep[0];
   document.getElementById(
     "kq4"
@@ -85,13 +81,9 @@ document.getElementById("btn5").onclick = timSoChanCuoiCung;
 // ===== BÀI TẬP 6 =====
 function doiCho2GiaTri() {
   var viTri1 = document.getElementById("viTriSo1").value * 1;
-  //   console.log(viTri1);
   var viTri2 = document.getElementById("viTriSo2").value * 1;
-  //   console.log(viTri2);
   var giaTri1 = arrX[viTri1];
-  //   console.log(giaTri1);
   var giaTri2 = arrX[viTri2];
-  //   console.log(giaTri2);
   var BienTam = giaTri1;
   arrX[viTri1] = giaTri2;
   arrX[viTri2] = BienTam;
@@ -107,7 +99,6 @@ function arrTangDan() {
   var arrTangDan = arrX.sort(function (a, b) {
     return a - b;
   });
-  //   console.log(arrTangDan);
   document.getElementById(
     "kq7"
   ).innerHTML = `Sắp xếp theo giá trị tăng dần: ${arrTangDan}`;
